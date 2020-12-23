@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.jero.biz.controller.MainController">
+   <children>
+      <JFXButton fx:id="selectFileBtn" onAction="#selectFileEvent" layoutX="19.0" layoutY="31.0" style="-fx-background-color: #3d8fff;" text="选择excel存放文件夹" textFill="WHITE" />
+      <JFXTextField fx:id="searchText" layoutX="38.0" layoutY="177.0" prefHeight="35.0" prefWidth="322.0" promptText="请输入要检索的文字，多段文字以英文逗号(,)分割" />
+      <JFXButton fx:id="startScreen" onAction="#startScreenEvent" layoutX="132.0" layoutY="236.0" prefHeight="29.0" prefWidth="134.0" style="-fx-background-color: #3d8fff;" text="开始筛选" textFill="WHITE" />
+      <Separator layoutX="-1.0" layoutY="289.0" prefHeight="2.0" prefWidth="400.0" />
+      <Label layoutX="14.0" layoutY="307.0" text="筛选结果" />
+      <Separator layoutX="-1.0" layoutY="164.0" prefHeight="2.0" prefWidth="400.0" />
+      <JFXButton fx:id="openFileDir" onAction="#openResultFileDir" layoutX="133.0" layoutY="431.0" prefHeight="29.0" prefWidth="134.0" style="-fx-background-color: #3d8fff;" text="打开文件夹" textFill="WHITE" />
+      <TextArea fx:id="resultDIrTextArea" editable="false" layoutX="19.0" layoutY="335.0" prefHeight="84.0" prefWidth="362.0" style="-fx-border-color: #3d8fff;" text="暂未筛选" />
+      <TextArea fx:id="selectFileDir" editable="false" layoutX="18.0" layoutY="69.0" prefHeight="65.0" prefWidth="362.0" style="-fx-border-color: #3d8fff;" text="未选择文件夹" />
+      <Label layoutX="255.0" layoutY="490.0" text="-by 天津盛扬信远科技有限公司">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
